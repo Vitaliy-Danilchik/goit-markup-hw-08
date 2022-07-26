@@ -8,13 +8,11 @@
   
   h2 {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
-    h1,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
+  p {
     margin: 0;
 }
