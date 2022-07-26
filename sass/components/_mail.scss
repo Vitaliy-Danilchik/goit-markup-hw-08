@@ -1,0 +1,33 @@
+.mail__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: $logo-down-color;
+  }
+  
+  .mail__field {
+    position: relative;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+  
+  .mail__label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mail__input:focus + .mail__label,
+  .mail__input:not(:placeholder-shown) + .mail__label {
+    transform: translateY(-46px) scale(1.2);
+}
+  
