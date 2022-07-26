@@ -648,7 +648,7 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .galerry__list {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -662,10 +662,15 @@ p {
 }
 .galerry__list:first-of-type {
   margin-bottom: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .galerry__list:first-of-type {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .galerry__item:not(:last-child) {
   margin-right: 8px;
 }
