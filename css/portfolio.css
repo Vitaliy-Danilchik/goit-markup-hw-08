@@ -259,11 +259,7 @@ p {
 .nav__link.current {
   color: #2196f3;
   position: relative;
-}
-@media screen and (max-width: 767px) {
-  .nav__link.current {
-    padding-bottom: 8px;
-  }
+  padding-bottom: 8px;
 }
 .nav__link.current::after {
   content: "";
@@ -275,6 +271,11 @@ p {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+@media screen and (max-width: 767px) {
+  .nav__link.current::after {
+    display: none;
+  }
 }
 
 .logo {

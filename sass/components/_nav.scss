@@ -50,9 +50,7 @@
 .nav__link.current {
   color: $accent-color;
   position: relative;
-  @media screen and (max-width: 767px) {
-    padding-bottom: 8px;
-  }
+  padding-bottom: 8px;
 
   &::after {
     content: "";
@@ -64,5 +62,8 @@
     height: 4px;
     background-color: $accent-color;
     border-radius: 2px;
+    @media screen and (max-width: 767px) {
+      display: none;}
   }
+ 
 }
