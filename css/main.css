@@ -284,6 +284,11 @@ p {
   font-size: 24px;
   line-height: 1.174;
 }
+@media screen and (max-width: 768px) {
+  .logo {
+    opacity: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
