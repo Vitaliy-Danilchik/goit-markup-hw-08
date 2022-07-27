@@ -17,14 +17,12 @@
   display: inline-block;
   @media screen and (max-width: 767px) {
     margin-top: 60px;
-
     font-size: 18px;
     line-height: 1.667;
   }
   @media screen and (min-width: 768px) {
     padding-top: 32px;
     padding-bottom: 32px;
-    
     font-size: 14px;
     line-height: 1.14;
   }
